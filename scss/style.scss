@@ -145,6 +145,7 @@ nav {
       @media screen and (max-width: 901px) {
         display: none;
       }
+      object-fit: cover;
       position: absolute;
       right: 0px;
       width: 50%;
@@ -369,6 +370,8 @@ nav {
     @media screen and (max-width: 900px) {
       display: none;
     }
+    object-fit: cover;
+
     position: relative;
     margin-right: 200px;
     align-items: center;
@@ -492,6 +495,8 @@ nav {
       width: 80%;
       height: auto;
     }
+    object-fit: cover;
+
     width: 60%;
     height: 393px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -510,6 +515,8 @@ nav {
   .first-img {
     img {
       width: 400px;
+      object-fit: cover;
+
     }
   }
   .middle {
@@ -549,6 +556,8 @@ nav {
   .second-img {
     img {
       width: 380px;
+      object-fit: cover;
+
     }
   }
 }
@@ -573,12 +582,14 @@ nav {
     justify-content: space-around;
     margin-top: 110px;
     margin-bottom: 100px;
+   overflow: hidden;
     .comment {
       @media screen and (max-width: 900px) {
         width: 100%;
         margin-top: 20px;
       }
-      width: 27%;
+      position: relative;
+      width: 700px;
       background-color: #f8f8f8;
       padding: 20px;
       border-radius: 10px;
@@ -663,6 +674,8 @@ nav {
     width: 284px;
     margin-left: 200px;
     margin-top: 32px;
+    object-fit: cover;
+
   }
   .app {
     @media screen and (max-width: 900px) {
