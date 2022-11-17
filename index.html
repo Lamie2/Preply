@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Preply</title>
 </head>
 
@@ -231,7 +231,9 @@
         <p>Start learning today. Join for now Online Courses</p>
       </div>
 
-      <div class="comments">
+      <div class="title"></div>
+      <div class="comments container">
+        
         <!-- <div class="comment">
           <div class="stars">
             <i class="fa-solid fa-star"></i>
@@ -296,10 +298,24 @@
           </div>
         </div> -->
       </div>
-      <div class="vector"> 
+      <div class="buttons">
+        <button class="carousel-button left" disabled onclick="handleCarouselButtonClick(-1)">left</button>
+        <button class="carousel-button right" onclick="handleCarouselButtonClick(1)">right</button>
+      </div>
+      <!-- <div class="vector">
         <img src="./image/Frame 426.png" alt="">
+      </div> -->
+      <div class="comments-mob"></div>
+      <div class="button">
+        <button class="carousel-button left" disabled onclick="handleCarouselButtonClick(-1)">left</button>
+        <button class="carousel-button right" onclick="handleCarouselButtonClick(1)">right</button>
       </div>
     </div>
+
+    
+
+    </div>
+
     <div class="apps">
       <img class="left-top" src="./image/element 1.png" alt="">
       <img class="phone" src="./image/phone mocu up 1.png" alt="">
@@ -326,6 +342,13 @@
         </div>
       </div>
     </div>
+
+    <div class="users container">
+      
+    </div>
+
+
+
   </main>
 
   <footer>
@@ -389,7 +412,6 @@
       </ul>
     </div>
   </footer>
-
 
   <script src="./main.js"></script>
 </body>

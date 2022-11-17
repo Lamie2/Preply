@@ -208,7 +208,6 @@ nav {
         .ellipse {
           @media screen and (max-width: 900px) {
             margin-top: 0px;
-
           }
           margin-top: 100px;
           width: 330px;
@@ -418,9 +417,9 @@ nav {
     .list-item {
       @media screen and (max-width: 900px) {
         width: 100%;
-        justify-content:left;
+        justify-content: left;
       }
-      
+
       display: flex;
       margin-top: 30px;
       .text {
@@ -457,7 +456,7 @@ nav {
 
 .statistics {
   @media screen and (max-width: 900px) {
-   display: none;
+    display: none;
   }
   background-color: #3ba0a9;
   display: flex;
@@ -466,7 +465,6 @@ nav {
     margin-left: -25%;
     margin-top: 50px;
     .title {
-     
       font-size: 50px;
 
       align-items: center;
@@ -516,7 +514,6 @@ nav {
     img {
       width: 400px;
       object-fit: cover;
-
     }
   }
   .middle {
@@ -557,7 +554,6 @@ nav {
     img {
       width: 380px;
       object-fit: cover;
-
     }
   }
 }
@@ -576,20 +572,26 @@ nav {
   }
   .comments {
     @media screen and (max-width: 900px) {
-      display: block;
+      display: none;
     }
     display: flex;
     justify-content: space-around;
     margin-top: 110px;
     margin-bottom: 100px;
-   overflow: hidden;
+    width: 1400px;
+    overflow: hidden; // i dont know why its not working
+    // overflow-x: scroll;
+    // overflow-y: hidden;
+    // white-space: nowrap;
     .comment {
       @media screen and (max-width: 900px) {
         width: 100%;
         margin-top: 20px;
       }
-      position: relative;
-      width: 700px;
+      //display: inline-block;
+      // flex: 0 0 auto;
+      margin: 20px;
+      width: 300px;
       background-color: #f8f8f8;
       padding: 20px;
       border-radius: 10px;
@@ -623,16 +625,66 @@ nav {
         }
       }
     }
-    
   }
-  .vector {
+  .buttons{
     @media screen and (max-width: 900px) {
-    display: none;
-    }
-    width: 13px;
-    height: 15px;
-    margin: 0 auto;
+         display: none;
+        }
   }
+  .comments-mob {
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+    margin-top: 110px;
+    margin-bottom: 100px;
+  height: 300px;
+  overflow: hidden;
+    .comment {
+      margin: 20px;
+      margin: 0 auto;
+      width: 300px;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 10px;
+      .fa-star {
+        color: #ffb800;
+        width: 23px;
+      }
+      .account {
+        display: flex;
+
+        .img {
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        .img-1 {
+          background-image: url("/image/student-1.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+        .img-2 {
+          background-image: url("/image/student-2.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+        .img-3 {
+          background-image: url("/image/student-3.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+  }
+  // .vector {
+  //   @media screen and (max-width: 900px) {
+  //     display: none;
+  //   }
+  //   width: 13px;
+  //   height: 15px;
+  //   margin: 0 auto;
+  // }
 }
 
 .apps {
@@ -675,7 +727,6 @@ nav {
     margin-left: 200px;
     margin-top: 32px;
     object-fit: cover;
-
   }
   .app {
     @media screen and (max-width: 900px) {

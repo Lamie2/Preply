@@ -1,0 +1,27 @@
+{
+  "name": "preply",
+  "version": "1.0.0",
+  "description": "just a project for studying",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lamie2/Preply.git"
+  },
+  "author": "Lamiaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lamie2/Preply/issues"
+  },
+  "homepage": "https://github.com/Lamie2/Preply#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "redux": "^4.2.0",
+    "wretch": "^2.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}
