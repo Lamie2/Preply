@@ -169,3 +169,37 @@ function handleCarouselButtonClick(direction) {
 }
 
 //#endregion
+
+//#region FETCH-TASK
+
+const usersContainer = document.querySelector(".users")
+
+function renderUserCard(user) {
+  const newElement = document.createElement("div")
+  usersContainer.prepend(newElement)
+  newElement.outerHTML = getUserCardMarkup(user)
+}
+
+function getUserCardMarkup(user) {
+  return `
+        <div class="txt">
+        <h5>Title: ${user.title}</h5>
+        <p>Status: ${user.completed ? "Complated" : "Uncomplated"}</p>
+        <hr>
+      </div>
+    `
+}
+
+function getData() {
+  fetch("https://jsonplaceholder.typicode.com/todos").then(result => {
+    result.json().then(json => {
+      json.forEach(user => {
+        renderUserCard(user)
+      })
+    })
+  })
+}
+
+getData()
+
+//#endregion
